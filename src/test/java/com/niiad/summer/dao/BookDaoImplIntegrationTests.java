@@ -16,8 +16,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 @SpringBootTest
 @ExtendWith(SpringExtension.class)
 public class BookDaoImplIntegrationTests {
-    private AuthorDao authorDao;
-    private BookDaoImpl underTest;
+    private final AuthorDao authorDao;
+    private final BookDaoImpl underTest;
 
     @Autowired
     public BookDaoImplIntegrationTests(BookDaoImpl underTest, AuthorDao authorDao) {
